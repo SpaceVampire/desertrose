@@ -14,11 +14,11 @@ $include antag_rep.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
- @SERVERNAME Drymouth Gulch
+ @SERVERNAME Desert Rose 2
 ## Napist Note: honestly all the display garbage should be setup to be handled via config, not in their own separate files. cross-ref code/game/world.dm #L245
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
- SERVERSQLNAME baddeathclaw
+  SERVERSQLNAME fo13
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
 STATIONNAME Mojave Wasteland
@@ -42,7 +42,7 @@ ROUND_END_COUNTDOWN 60
 ## Comment this out if you want to use the SQL based admin system, the legacy system uses admins.txt.
 ## You need to set up your database to use the SQL based system.
 ## This flag is automatically enabled if SQL_ENABLED isn't
-#ADMIN_LEGACY_SYSTEM
+ADMIN_LEGACY_SYSTEM
 
 ##Uncomment this to stop any admins loaded by the legacy system from having their rank edited by the permissions panel
 #PROTECT_LEGACY_ADMINS
@@ -52,10 +52,10 @@ ROUND_END_COUNTDOWN 60
 
 ##Uncomment this to have admin ranks only loaded from the legacy admin_ranks.txt
 ##If enabled, each time admins are loaded ranks the database will be updated with the current ranks and their flags
-#LOAD_LEGACY_RANKS_ONLY
+LOAD_LEGACY_RANKS_ONLY
 
 ## Comment this out if you want to use the SQL based banning system. The legacy systems use the files in the data folder. You need to set up your database to use the SQL based system.
-#BAN_LEGACY_SYSTEM
+BAN_LEGACY_SYSTEM
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
 ENABLE_LOCALHOST_RANK
@@ -71,18 +71,18 @@ ENABLE_LOCALHOST_RANK
 #USE_ACCOUNT_AGE_FOR_JOBS
 
 ## Unhash this to track player playtime in the database. Requires database to be enabled.
-USE_EXP_TRACKING
+#USE_EXP_TRACKING
 ## Unhash this to enable playtime requirements for head jobs.
-USE_EXP_RESTRICTIONS_HEADS
+#USE_EXP_RESTRICTIONS_HEADS
 ## Unhash this to override head jobs' playtime requirements with this number of hours.
 ## Leave this commented out to use the values defined in the job datums. Values in the datums are stored as minutes.
 #USE_EXP_RESTRICTIONS_HEADS_HOURS 3
 ## Unhash this to change head jobs' playtime requirements so that they're based on department playtime, rather than crew playtime.
-USE_EXP_RESTRICTIONS_HEADS_DEPARTMENT
+#USE_EXP_RESTRICTIONS_HEADS_DEPARTMENT
 ## Unhash this to enable playtime requirements for certain non-head jobs, like Engineer and Scientist.
-USE_EXP_RESTRICTIONS_OTHER
+#USE_EXP_RESTRICTIONS_OTHER
 ## Allows admins to bypass job playtime requirements.
-USE_EXP_RESTRICTIONS_ADMIN_BYPASS
+#USE_EXP_RESTRICTIONS_ADMIN_BYPASS
  
 ## log OOC channel
 LOG_OOC
@@ -205,7 +205,7 @@ CHECK_RANDOMIZER
 #IPINTEL_DOMAIN check.getipintel.net
 
 ## Uncomment to allow web client connections
-#ALLOW_WEBCLIENT
+ALLOW_WEBCLIENT
 
 ## Uncomment to restrict web client connections to byond members
 ## This makes for a nice pay gate to cut down on ban evading, as the webclient's cid system isn't that great
@@ -220,17 +220,17 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-DISCORDURL https://discord.gg/TCj5cJN
+DISCORDURL https://discord.gg/PS5Genn
 
 ## Wiki address
-WIKIURL https://bad-deathclaw.fandom.com/wiki/Bad_Deathclaw_Wiki
+WIKIURL https://wiki.fandom.com/wiki/Bad_Deathclaw_Wiki
 
 ## Rules address
-RULESURL https://discord.gg/TCj5cJN
+RULESURL https://discord.gg/PS5Genn
 
 
 ## Github address
-GITHUBURL https://github.com/BadDeathclaw/TG-Claw
+GITHUBURL https://github.com/judgex/desertrose
 
 ## Round specific stats address
 ## Link to round specific parsed logs; IE statbus. It is appended with the RoundID automatically by ticker/Reboot()

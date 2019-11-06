@@ -251,10 +251,10 @@ GLOBAL_PROTECT(security_mode)
 			features += "vote"
 		hostedby = CONFIG_GET(string/hostedby)
 
-	s += "<b>\[ENG] Fallout 13 - 18+<br>"
+	s += "<b>\[ENG] Unofficial Fallout 13 - 18+<br>"
 	s += "<br>"
-	s += "Medium RP \[https://discord.gg/TCj5cJN]<br>"
-	s += "Hosted by Ren"
+	s += "Heavy RP \[https://discord.gg/yqCRFB8]<br>"
+	s += "Hosted By Garbage"
 
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)

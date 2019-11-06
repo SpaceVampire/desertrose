@@ -179,7 +179,7 @@
 
 /datum/interaction/lewd/throatfuck
 	command = "throatfuck"
-	description = "Fuck their throat. | Does oxy damage."
+	description = "Fuck their throat. (Will choke them.)"
 	interaction_sound = null
 	require_user_penis = TRUE
 	require_target_mouth = TRUE
@@ -321,7 +321,7 @@
 
 /datum/interaction/lewd/thighs
 	command = "thigh_smother"
-	description = "Smother them."
+	description = "Sit on their face."
 	max_distance = 0
 	require_user_bottomless = TRUE
 	require_target_mouth = TRUE
@@ -336,7 +336,7 @@
 
 /datum/interaction/lewd/nuts
 	command = "nut_face"
-	description = "Nuts to face."
+	description = "Put your nuts in their face."
 	interaction_sound = null
 	require_user_bottomless = TRUE
 	require_user_penis = TRUE

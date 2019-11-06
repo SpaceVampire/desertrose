@@ -69,3 +69,12 @@
 	max_distance = 25
 	needs_physical_contact = 1
 	max_distance = 25
+
+/datum/interaction/hug
+	command = "hug"
+	description = "Hug them."
+	require_user_hands = 1
+	simple_message = "USER gives TARGET a gentle hug."
+	max_distance = 25
+	needs_physical_contact = 1
+	max_distance = 25

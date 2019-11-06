@@ -37,7 +37,7 @@
 	if(..(user, silent))
 		if(user_not_tired && user.refactory_period)
 			if(!silent) //bye spam
-				to_chat(user, "<span class='warning'>You're still exhausted from the last time. You need to wait [DisplayTimeText(user.refactory_period * 10, TRUE)] until you can do that!</span>")
+				to_chat(user, "<span class='warning'>You need to wait [DisplayTimeText(user.refactory_period * 10, TRUE)] to interact again.</span>")
 			return FALSE
 
 		if(require_user_bottomless && !user.is_bottomless())
@@ -83,7 +83,7 @@
 	if(..(user, target, silent))
 		if(target_not_tired && target.refactory_period)
 			if(!silent) //same with this
-				to_chat(user, "<span class='warning'>They're still exhausted from the last time. They need to wait [DisplayTimeText(target.refactory_period * 10, TRUE)] until you can do that!</span>")
+				to_chat(user, "<span class='warning'>They need to wait [DisplayTimeText(user.refactory_period * 10, TRUE)] to interact again.</span>")
 			return FALSE
 
 		if(require_target_bottomless && !target.is_bottomless())
@@ -140,7 +140,7 @@
 /datum/interaction/lewd/get_action_link_for(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	return "<font color='#FF0000'><b>LEWD:</b></font> [..()]"
 	if(user.stat == DEAD)
-		to_chat(user, "<span class='warning'>You cannot erp as ghost!</span>")
+		to_chat(user, "<span class='warning'>You cannot have sex as ghost!</span>")
 		return
 
 /mob/living/carbon/human/list_interaction_attributes()
