@@ -251,7 +251,7 @@ GLOBAL_PROTECT(security_mode)
 			features += "vote"
 		hostedby = CONFIG_GET(string/hostedby)
 
-	s += "<b>\[ENG] Unofficial Fallout 13 [18+]<br>"
+	s += "<b>\[ENG] Unofficial Fallout 13 \[18+]<br>"
 	s += "An 18+ HRP server based around Fallout 2 and New Vegas.<br>"
 	s += "Heavy RP \[https://discord.gg/yqCRFB8]<br>"
 	s += "Hosted by: Vault Dweller"
