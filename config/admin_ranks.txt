@@ -36,9 +36,10 @@
 
 #Previous ranks on archive incase someone shits the proverbial bed. (once everyone has been switched over to the new ranks you're more than welcome to blitz these to reduce bloat)
 Admin Observer	= -AUTOLOGIN
-Moderator		= +ADMIN
+Moderator		= +ADMIN +FUN +BAN +SPAWN +POSSESS +BUILD +VAREDIT
 Admin Candidate	= +@
 Trial Admin		= +@ +SPAWN +VAREDIT +BAN
+Mentor		= +ADMIN
 Badmin			= +@ +POSSESS +POLL +BUILDMODE +SERVER +FUN
 Admin			= +EVERYTHING *EVERYTHING
 Game Master		= +EVERYTHING *EVERYTHING
